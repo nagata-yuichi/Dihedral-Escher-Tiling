@@ -50,12 +50,12 @@ execution:
 ```
 $ ./jikken_I_get_conf <string1> <string2> <string3> <integer1> <integer2>
 ```
-
-&nbsp; \<string1\> : file name of the first goal shape (mesh representation)
-&nbsp; \<string2\> : file name of the second goal shape (mesh representation)
-&nbsp; \<string3\> : file name to which results are written
-&nbsp; \<interger1\> : the number of template configurations stored (1000000 in the paper)
-&nbsp; \<interger2\> : the number of threads for parallel execution
+ 
+&nbsp; \<string1\> : file name of the first goal shape (mesh representation) 
+&nbsp; \<string2\> : file name of the second goal shape (mesh representation) 
+&nbsp; \<string3\> : file name to which results are written 
+&nbsp; \<interger1\> : the number of template configurations stored (1000000 in the paper) 
+&nbsp; \<interger2\> : the number of threads for parallel execution 
 
 example:
 ```
