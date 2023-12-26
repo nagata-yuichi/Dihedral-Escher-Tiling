@@ -1,0 +1,1 @@
+g++ -o jikken_I_get_conf -O3  main_I_get_conf.cpp env_I_get_conf.cpp search_I_get_conf.cpp operator_candidate.cpp -lm -lX11 -std=c++11 -fopenmp  -DNDEBUG 

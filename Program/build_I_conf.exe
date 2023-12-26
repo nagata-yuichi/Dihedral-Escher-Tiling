@@ -1,0 +1,4 @@
+g++ -o jikken_I_conf -O3 main_I.cpp env_I.cpp search_I_conf.cpp operator_IR.cpp operator_I.cpp operator_base.cpp -lm -std=c++11 -fopenmp -DNDEBUG 
+
+
+

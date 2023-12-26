@@ -1,0 +1,9 @@
+ g++ -o display -O3 main_display.cpp env_display.cpp display.cpp operator_additional.cpp operator_IR.cpp operator_I.cpp operator_base.cpp Xwindow4.cc -lm -lX11 -std=c++11
+ 
+
+
+
+
+
+
+
