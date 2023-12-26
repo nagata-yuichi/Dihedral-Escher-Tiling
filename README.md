@@ -41,7 +41,7 @@ $ ./build_display.exe
 Then, an executable file "display" is generated.
 
 Note:
-You may need to modify the code that includes Eigen libray (see error messages). 
+You may need to modify the part of the code that includes Eigen libray (see error messages). 
 
 # How to perform the EST
 (1) Selecting promising template configurations
