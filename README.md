@@ -50,7 +50,6 @@ execution:
 ```
 $ ./jikken_I_get_conf <string1> <string2> <string3> <integer1> <integer2>
 ```
-  
 &nbsp; \<string1\> : file name of the first goal shape (mesh representation)  
 &nbsp; \<string2\> : file name of the second goal shape (mesh representation)  
 &nbsp; \<string3\> : file name to which results are written  
@@ -63,4 +62,21 @@ $ ./jikken_I_get_conf seahorse_60_36.dat pegasus_60_39.dat AAA 1000000 20
 ```
 Then, the specified number of template configurations are stored in a file (AAA_seahorse_60_36_pegasus_60_39.conf in this example).
 
+(2) Solve the optimization problem for the selected template configurations
 
+execution:
+```
+$ ./jikken_I_conf <string1> <string2> <string3> <integer1> <double1> <string4> <interger2>
+```
+&nbsp; \<string1\>: file name of the first goal shape (mesh representation)  
+&nbsp; \<string2\>: file name of the second goal shape (mesh representation)  
+&nbsp; \<string3\>: file name to which results are written  
+&nbsp; \<interger1\>: the number of top solutions stored (10 in the paper)  
+&nbsp; \<double1\>: the value of alpha for the inner points (0.5 in the paper)  
+&nbsp; \<interger2\>: the number of threads for parallel execution  
+
+example:
+```
+$ ./jikken_I_conf seahorse_60_36.dat pegasus_60_39.dat BBB 100 0.5 AAA_seahorse_60_36_pegasus_60_39.conf 20    
+```
+Then, the specified number of top solutions are stored in a file (BBB_seahorse_60_36_pegasus_60_39.tile in this example).
