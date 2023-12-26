@@ -45,7 +45,6 @@ You may need to modify the code that includes Eigen libray (see error messages).
 
 # How to perform the EST
 (1) Selecting promising template configurations
-
 execution:
 ```
 $ ./jikken_I_get_conf <string1> <string2> <string3> <integer1> <integer2>
@@ -63,7 +62,6 @@ $ ./jikken_I_get_conf seahorse_60_36.dat pegasus_60_39.dat AAA 1000000 20
 Then, the specified number of template configurations are stored in a file (AAA_seahorse_60_36_pegasus_60_39.conf in this example).
 
 (2) Solve the optimization problem for the selected template configurations
-
 execution:
 ```
 $ ./jikken_I_conf <string1> <string2> <string3> <integer1> <double1> <string4> <interger2>
@@ -80,3 +78,18 @@ example:
 $ ./jikken_I_conf seahorse_60_36.dat pegasus_60_39.dat BBB 100 0.5 AAA_seahorse_60_36_pegasus_60_39.conf 20    
 ```
 Then, the specified number of top solutions are stored in a file (BBB_seahorse_60_36_pegasus_60_39.tile in this example).
+
+(3) Display the top solutions (tile shapes and tiling results) 
+execution:
+```
+$ ./display <string1> <double1>
+```
+&nbsp; \<string1\>: file name of the top solutions stored  
+&nbsp; \<double1\>: display size of tile shapes  
+
+example:
+```
+$ ./display BBB_seahorse_60_36_pegasus_60_39.tile 0.4
+```
+Pressing the return key moves to the next result.
+
