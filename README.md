@@ -93,3 +93,15 @@ $ ./display BBB_seahorse_60_36_pegasus_60_39.tile 0.4
 ```
 Pressing the return key moves to the next result.
 
+# Creation of goal shapes
+If you want to create original goal shapes, you can do so through the following two steps. 
+
+(1) Creation of polygon data
+First, you must create goal shapes (represented by polygons). This is done using a program in the directory Make_Polygon. The program is based on Processing (https://processing.org/) and the necessary environment can be easily established. 
+
+The instructions for using this program are commented in the first few lines of the program. The points of a polygon must be numbered clockwise and should be arranged at approximately equal intervals (not necessarily exact).
+
+The format of a created polygon data is as follows.
+&nbsp; the number of points  
+&nbsp; the x and y coordinates of the points  
+
