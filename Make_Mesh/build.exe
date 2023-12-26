@@ -1,0 +1,3 @@
+g++ -o jikken -O3 main.cpp env.cpp search.cpp display.cpp Xwindow4.cc -lm -lX11 -std=c++11 -lncurses
+
+
