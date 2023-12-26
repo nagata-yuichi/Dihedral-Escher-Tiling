@@ -101,7 +101,7 @@ First, you must create goal shapes (represented by polygons). This is done using
 
 The instructions for using this program are commented in the first few lines of the program. The points of a polygon must be numbered clockwise and should be arranged at approximately equal intervals (not necessarily exact).
 
-The format of a created polygon data is as follows.
+The format of a created polygon data is as follows.  
 &nbsp; the number of points  
 &nbsp; the x and y coordinates of the points  
 
