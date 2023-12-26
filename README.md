@@ -105,3 +105,38 @@ The format of a created polygon data is as follows.
 &nbsp; \- the number of points  
 &nbsp; \- the x and y coordinates of the points  
 
+(2) Convert polygon to mesh
+Second, polygon data must be converted to mesh data. This is done using a program in the directory Make_Mesh.
+
+Compile:
+Execute the following in the directory Make_Mesh.
+```
+$ chmod 700 
+$ ./build.exe
+```
+Then, an executable file "jikken" is generated.
+
+If there is a problem with the inclusion of the header file ncurses.h, the following command must be run to install necessary libraries. 
+```
+$ sudo apt-get install libncurses5-dev
+```
+
+execution:
+```
+$ ./jikken <string1> <double1> <double2>
+```
+&nbsp; \<string1\>: file name of an input polygon  
+&nbsp; \<double1\>: a parameter specifying the lengths of the edges inside the mesh (1.0-1.2)  
+&nbsp; \<double2\>: a parameter specifying the allowable variation of the lengths of the edges inside the mesh (0.1-0.2)  
+
+example:
+```
+$ ./jikken pegasus_60.dat 1.1 0.1
+```
+Then, you can see a mesh representation of the input polygon on the screen. In the displayed mesh, the inner points (green points) are moving, so if the movement of the green points has converged, type "q" on the terminal to exit. Then, a mesh representation of the input polygon (e.g. pegasus_60_27.dat) is obtained.  
+
+The format of a created mesh data is as follows.  
+&nbsp; \- the number of boundary points, the number of inner points
+&nbsp; \- the x and y coordinates of the boundary points
+&nbsp; \- the x and y coordinates of the inner points
+&nbsp; \- the adjacency matrix of the mesh
