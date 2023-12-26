@@ -41,4 +41,25 @@ $ ./build_display.exe
 Then, an executable file "display" is generated.
 
 Note:
-You may need to modify the code that includes Eigen libray. 
+You may need to modify the code that includes Eigen libray (see error messages). 
+
+# How to perform the EST
+(1) Selecting promising template configurations
+
+execution:
+```
+$ ./jikken_I_get_conf <string1> <string2> <string3> <integer1> <integer2>
+```
+&nbsp; <string1>: file name of the first goal shape (mesh representation)
+&nbsp; <string2>: file name of the second goal shape (mesh representation)
+&nbsp; <string3>: file name to which results are written
+&nbsp; <interger1>: the number of template configurations stored (1000000 in the paper)
+&nbsp; <interger2>: the number of threads for parallel execution
+
+example:
+```
+$ ./jikken_I_get_conf seahorse_60_36.dat pegasus_60_39.dat AAA 1000000 20
+```
+Then, the specified number of template configurations are stored in a file (AAA_seahorse_60_36_pegasus_60_39.conf in this example).
+
+
