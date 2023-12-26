@@ -97,7 +97,7 @@ Pressing the return key moves to the next result.
 If you want to create original goal shapes, you can do so through the following two steps. 
 
 (1) Creation of polygon data  
-First, you must create goal shapes (represented by polygons). This is done using a program in the directory Make_Polygon. The program is based on Processing (https://processing.org/) and the necessary environment can be easily established. 
+First, you must create goal shapes (represented by polygons). This is done using a program in the directory Make_Polygon. The program is based on Processing [[link]](https://processing.org/) and the necessary environment can be easily established. 
 
 The instructions for using this program are commented in the first few lines of the program. The points of a polygon must be numbered clockwise and should be arranged at approximately equal intervals (not necessarily exact).
 
@@ -136,7 +136,7 @@ $ ./jikken pegasus_60.dat 1.1 0.1
 Then, you can see a mesh representation of the input polygon on the screen. In the displayed mesh, the inner points (green points) are moving, so if the movement of the green points has converged, type "q" on the terminal to exit. Then, a mesh representation of the input polygon (e.g. pegasus_60_27.dat) is obtained.  
 
 The format of a created mesh data is as follows.  
-&nbsp; \- the number of boundary points, the number of inner points
-&nbsp; \- the x and y coordinates of the boundary points
-&nbsp; \- the x and y coordinates of the inner points
-&nbsp; \- the adjacency matrix of the mesh
+&nbsp; \- the number of boundary points, the number of inner points  
+&nbsp; \- the x and y coordinates of the boundary points  
+&nbsp; \- the x and y coordinates of the inner points  
+&nbsp; \- the adjacency matrix of the mesh  
