@@ -15,6 +15,30 @@ The source code is implemented in C++ with the Eigen library. The author ran the
 
 # Directories
 - Program: Source codes for generating and displaying tilings
-- Data: files of goal shapes (mesh representation)
+- Data: Files of goal shapes (mesh representation)
 - Make_Polygon: A program for creating goal shapes (polygon)
 - Make_Mesh: Source codes for constructing goal shapes (mesh)
+
+# Compile
+Execute the following in the directory Program.
+
+```
+$ chmod 700 build_I_get_conf.exe
+$ ./build_I_get_conf.exe
+```
+Then, an executable file "jikken_I_get_conf" is generated.
+
+```
+$ chmod 700 build_I_conf.exe
+$ ./build_I_conf.exe
+```
+Then, an executable file "jikken_I_conf" is generated.
+
+```
+$ chmod 700 build_display.exe
+$ ./build_display.exe
+```
+Then, an executable file "display" is generated.
+
+Note:
+You may need to modify the code that includes Eigen libray. 
