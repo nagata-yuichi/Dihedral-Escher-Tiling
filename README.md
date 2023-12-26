@@ -12,3 +12,9 @@ Outline: An Escher-like tiling is a tiling consisting of one or a few artistic s
 The source code is implemented in C++ with the Eigen library. The author ran the program on Ubuntu 20.04, where the following preparation may be required to compile the source code. 
 - Make the Eigen library [[link]](https://eigen.tuxfamily.org) available on your PC. 
 - Install the X11 library on your PC. `$ sudo apt install libx11-dev`
+
+# Directories
+- Program: Source codes for generating and displaying tilings
+- Data: files of goal shapes (mesh representation)
+- Make_Polygon: A program for creating goal shapes (polygon)
+- Make_Mesh: Source codes for constructing goal shapes (mesh)
